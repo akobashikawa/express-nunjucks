@@ -16,7 +16,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 nunjucks.configure('views', {
     autoescape: true,
-    express: app
+    express: app,
+    watch: true,
+    noCache: true
 });
 
 // uncomment after placing your favicon in /public
